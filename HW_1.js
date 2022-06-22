@@ -169,6 +169,37 @@ checkAge_2('')
 checkAge_2('33')
 checkAge_2(-30)
 //____________________________________________________________________________________________________--
+// 4***:
+// Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
+// let age = 10, age_2 = 18, age_3 = 60;
 
+const checkAge_3 = function(age)
+{
+   console.log(age)
+   if (age && !isNaN(age))  //age -для контроля ввода пустого значения, !isNan(age) -для преобразования string в number(если возможно)
+   {
+       if (age < age_2) 
+       {
+           alert( "You don’t have access cause your age is "  + age +  " It’s less then " + age_2)
+       }
+       else if (age>=age_2 && age<age_3) 
+       {
+           alert( "Welcome !")
+       }
+       else if (age>=age_3) 
+       {
+           alert( "Keep calm and look Culture channel")
+       }
+       else 
+       {
+           alert( "Technical work")
+       }
+   }
+   else
+   {
+       alert( 'Not an integer value')
+   }
+}
 
-
+let input_age = prompt('введи число', '')
+checkAge_3(input_age)
