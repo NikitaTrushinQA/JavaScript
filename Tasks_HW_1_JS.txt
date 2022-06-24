@@ -1,4 +1,4 @@
-# Tasks HomeWork_1
+# Tasks_HomeWork_1
 ___
  1. Создать переменную “item_1”
  2. Присвоить переменной item_1 цифру 5.
